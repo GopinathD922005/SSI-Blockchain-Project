@@ -1,6 +1,4 @@
-# Sample Hardhat 3 Beta Project (minimal)
-
-This project has a minimal setup of Hardhat 3 Beta, without any plugins.
+# Blockchain-Based Self-Sovereign Identity (SSI) System for Secure Digital Identity Management
 
 ## What's included?
 
