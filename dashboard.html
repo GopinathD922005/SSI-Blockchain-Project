@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>🔐 SSI</h2>
+  <a href="index.html">🏠 Home</a>
+  <a href="user.html">👤 User</a>
+  <a href="issuer.html">🏫 Issuer</a>
+  <a href="verifier.html">🔍 Verifier</a>
+  <a href="dashboard.html">📊 Dashboard</a>
+</div>
+
+<div class="main">
+
+<button class="toggle" onclick="toggleMode()">🌙</button>
+
+<div class="card">
+  <h2>📊 System Dashboard</h2>
+</div>
+
+<div class="grid">
+
+<div class="card stat">
+  <h3>Total Identities</h3>
+  <h1>1</h1>
+</div>
+
+<div class="card stat">
+  <h3>Total Credentials</h3>
+  <h1>2</h1>
+</div>
+
+</div>
+
+<canvas id="chart"></canvas>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+function toggleMode(){
+  document.body.classList.toggle("light");
+}
+
+new Chart(document.getElementById("chart"), {
+  type: 'bar',
+  data: {
+    labels: ['Identities', 'Credentials'],
+    datasets: [{
+      data: [1,2],
+    }]
+  }
+});
+</script>
+
+</body>
+</html>

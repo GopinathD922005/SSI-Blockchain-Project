@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About SSI System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>🔐 SSI</h2>
+  <a href="index.html">🏠 Home</a>
+  <a href="user.html">👤 User</a>
+  <a href="issuer.html">🏫 Issuer</a>
+  <a href="verifier.html">🔍 Verifier</a>
+  <a href="dashboard.html">📊 Dashboard</a>
+  <a href="about.html">📘 About</a>
+</div>
+
+<div class="main">
+
+<button class="toggle" onclick="toggleMode()">🌙</button>
+
+<div class="card">
+  <h1>📘 About This System</h1>
+  <p>
+    This project implements a <b>Self-Sovereign Identity (SSI)</b> system using blockchain technology.
+    It allows users to control their own identity without relying on a central authority.
+  </p>
+</div>
+
+<div class="card">
+  <h2>⚙️ How It Works</h2>
+  <ul>
+    <li>User creates a DID (Decentralized Identifier)</li>
+    <li>Issuer generates and signs credentials</li>
+    <li>Credentials are stored securely on blockchain</li>
+    <li>Verifier validates using digital signatures</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>🧠 Technologies Used</h2>
+  <ul>
+    <li>Solidity Smart Contracts</li>
+    <li>Ethereum (Ganache Local Blockchain)</li>
+    <li>MetaMask Wallet</li>
+    <li>IPFS (Decentralized Storage)</li>
+    <li>Ethers.js</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>🌍 Real-World Use Cases</h2>
+  <ul>
+    <li>🎓 Digital Student Identity</li>
+    <li>🏥 Healthcare Records</li>
+    <li>🏛️ Government ID Systems</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h2>🔐 Security Features</h2>
+  <ul>
+    <li>Blockchain immutability</li>
+    <li>Cryptographic signatures</li>
+    <li>Decentralized storage</li>
+  </ul>
+</div>
+
+</div>
+
+<script>
+function toggleMode(){
+  document.body.classList.toggle("light");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* 🌐 ROOT COLORS */
+:root {
+  --bg: #020617;
+  --card: rgba(255,255,255,0.06);
+  --text: #e2e8f0;
+  --accent: #38bdf8;
+}
+
+/* LIGHT MODE */
+.light {
+  --bg: #f1f5f9;
+  --card: rgba(0,0,0,0.05);
+  --text: #0f172a;
+}
+
+/* 🌍 GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.4s;
+}
+
+/* 🧭 SIDEBAR */
+.sidebar {
+  position: fixed;
+  width: 220px;
+  height: 100%;
+  background: #020617;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  color: var(--accent);
+}
+
+.sidebar a {
+  display: block;
+  margin: 15px 0;
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* 📦 MAIN */
+.main {
+  margin-left: 240px;
+  padding: 20px;
+}
+
+/* 🧊 GLASS CARD */
+.card {
+  background: var(--card);
+  backdrop-filter: blur(15px);
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  animation: fade 0.5s ease;
+}
+
+@keyframes fade {
+  from {opacity:0; transform: translateY(10px);}
+  to {opacity:1;}
+}
+
+/* 🔘 BUTTON */
+button {
+  background: var(--accent);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* ✏ INPUT */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* 📊 GRID */
+.grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+/* STATUS */
+.success { color: #22c55e; }
+.error { color: #ef4444; }
+
+/* 🌙 TOGGLE */
+.toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

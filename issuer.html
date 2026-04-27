@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Issuer Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>🔐 SSI</h2>
+  <a href="index.html">🏠 Home</a>
+  <a href="user.html">👤 User</a>
+  <a href="issuer.html">🏫 Issuer</a>
+  <a href="verifier.html">🔍 Verifier</a>
+  <a href="dashboard.html">📊 Dashboard</a>
+</div>
+
+<div class="main">
+
+<button class="toggle" onclick="toggleMode()">🌙</button>
+
+<div class="card">
+  <h2>🏫 Issuer Panel</h2>
+  <button onclick="connectWallet()">Connect Wallet</button>
+  <p id="account"></p>
+</div>
+
+<div class="card">
+  <h3>Issue Credential</h3>
+
+  <input id="credData" placeholder="Enter credential">
+
+  <select id="type">
+    <option>Student</option>
+    <option>Healthcare</option>
+    <option>Government</option>
+  </select>
+
+  <button onclick="issue()">Issue Credential</button>
+  <p id="issueStatus"></p>
+
+</div>
+
+</div>
+
+<script>
+function toggleMode(){
+  document.body.classList.toggle("light");
+}
+</script>
+
+<script src="./node_modules/ethers/dist/ethers.umd.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

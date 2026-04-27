@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>🔐 SSI</h2>
+  <a href="index.html">🏠 Home</a>
+  <a href="user.html">👤 User</a>
+  <a href="issuer.html">🏫 Issuer</a>
+  <a href="verifier.html">🔍 Verifier</a>
+  <a href="dashboard.html">📊 Dashboard</a>
+</div>
+
+<div class="main">
+
+<button class="toggle" onclick="toggleMode()">🌙</button>
+
+<div class="card">
+  <h2>👤 User Panel</h2>
+  <button onclick="connectWallet()">Connect Wallet</button>
+  <p id="account"></p>
+</div>
+
+<div class="card">
+  <h3>Create Identity</h3>
+  <input id="did" placeholder="Enter DID">
+  <button onclick="saveID()">Save</button>
+  <button onclick="getID()">Get DID</button>
+  <p id="output"></p>
+</div>
+
+<div class="card">
+  <h3>Login</h3>
+  <input id="loginDid">
+  <button onclick="login()">Login</button>
+  <p id="loginStatus"></p>
+</div>
+
+<div class="card">
+  <h3>QR Code</h3>
+  <button onclick="genQR()">Generate</button>
+  <canvas id="qr"></canvas>
+</div>
+
+<div class="card">
+  <h3>Upload Document (IPFS)</h3>
+  <input type="file" id="file">
+  <button onclick="uploadFile()">Upload</button>
+</div>
+
+<div class="card">
+  <h3>Credentials</h3>
+  <button onclick="showCreds()">Get Credentials</button>
+  <ul id="list"></ul>
+</div>
+
+</div>
+
+<script>
+function toggleMode(){
+  document.body.classList.toggle("light");
+}
+</script>
+
+<script src="./node_modules/ethers/dist/ethers.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

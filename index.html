@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SSI Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>🔐 SSI</h2>
+  <a href="index.html">🏠 Home</a>
+  <a href="user.html">👤 User</a>
+  <a href="issuer.html">🏫 Issuer</a>
+  <a href="verifier.html">🔍 Verifier</a>
+  <a href="dashboard.html">📊 Dashboard</a>
+  <a href="about.html">📘 About</a>
+</div>
+
+<div class="main">
+
+<button class="toggle" onclick="toggleMode()">🌙</button>
+
+<div class="card">
+  <h1>Decentralized Identity System</h1>
+  <p>Blockchain-based Self-Sovereign Identity with IPFS & Signatures</p>
+</div>
+
+<div class="grid">
+
+<div class="card stat">
+  <h3>Identity</h3>
+  <p>Create & manage DID</p>
+</div>
+
+<div class="card stat">
+  <h3>Credentials</h3>
+  <p>Issue & verify securely</p>
+</div>
+
+<div class="card stat">
+  <h3>Security</h3>
+  <p>Cryptographic signatures</p>
+</div>
+
+</div>
+
+</div>
+
+<script>
+function toggleMode(){
+  document.body.classList.toggle("light");
+}
+</script>
+
+</body>
+</html>

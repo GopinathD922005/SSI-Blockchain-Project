@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+
+# Hardhat build files
+artifacts/
+cache/
+
+# Env files (if any)
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# VS Code settings (optional)
+.vscode/
+
+# TypeScript build
+dist/

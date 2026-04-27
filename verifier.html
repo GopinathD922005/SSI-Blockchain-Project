@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verifier Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>🔐 SSI</h2>
+  <a href="index.html">🏠 Home</a>
+  <a href="user.html">👤 User</a>
+  <a href="issuer.html">🏫 Issuer</a>
+  <a href="verifier.html">🔍 Verifier</a>
+  <a href="dashboard.html">📊 Dashboard</a>
+</div>
+
+<div class="main">
+
+<button class="toggle" onclick="toggleMode()">🌙</button>
+
+<div class="card">
+  <h2>🔍 Verifier Panel</h2>
+  <button onclick="connectWallet()">Connect Wallet</button>
+  <p id="account"></p>
+</div>
+
+<div class="card">
+  <h3>Verify Credential</h3>
+  <button onclick="verify()">Verify</button>
+  <p id="verifyResult"></p>
+</div>
+
+</div>
+
+<script>
+function toggleMode(){
+  document.body.classList.toggle("light");
+}
+</script>
+
+<script src="./node_modules/ethers/dist/ethers.umd.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
